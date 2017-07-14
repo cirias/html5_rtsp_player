@@ -37,7 +37,7 @@ wsserver.on('connection',function(conn) {
                 {
                     channelsocket[conn.channel].outControlData = true;
                     channelsocket[conn.channel].once('data',function(data){
-                        console.log(data.toString('utf8'));
+                        console.log(">>>>>>>>>>>>>", data.toString('utf8'));
                         var msg = wspMsg("200","WRAP OK",res.data.seq,{"channel":conn.channel},data);
                         conn.send(msg);
                     });

@@ -1,6 +1,7 @@
 // import babel from 'rollup-plugin-babel';
 import buble from 'rollup-plugin-buble';
 import alias from 'rollup-plugin-alias';
+import async from 'rollup-plugin-async';
 
 const path = require('path');
 
@@ -11,6 +12,7 @@ export default {
     ],
     sourceMap: true,
     plugins: [
+        async(),
         //buble({
             //exclude: 'node_modules/**'
         //}),

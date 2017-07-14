@@ -37,6 +37,10 @@
     "bp_event": "^1.1.2",
     "bp_logger": "^1.0.3",
     "bp_statemachine": "^1.0.13",
-    "jsencrypt": "git+https://github.com/kreopt/jsencrypt.git"
+    "jsencrypt": "git+https://github.com/kreopt/jsencrypt.git",
+    "rollup-plugin-async": "^1.2.0"
+  },
+  "scripts" : {
+    "build": "rollup -c"
   }
 }

@@ -11,7 +11,7 @@ getTagged("client:rtsp").setLevel(LogLevel.Error);
 let wsTransport = {
     constructor: WebsocketTransport,
     options: {
-        socket: "wss://specforge.com/ws/"
+      socket: "ws://127.0.0.1:1104"
     }
 };
 
